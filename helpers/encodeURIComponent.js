@@ -1,11 +1,13 @@
 (function (root, factory) {
-  var dependencies = ['underscore', 'handlebars'];
   if (typeof define === 'function' && define.amd) {
-    define(dependencies, factory);
+    define(['underscore', 'handlebars'], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory.apply(null, dependencies.map(require));
+    module.exports = factory(require('underscore'), require('handlebars'));
   } else {
-    root.registerHelper = factory(root._, root.Handlebars);
+    root.Handlebars.registerHelper(
+      'encodeURIComponent',
+      factory(root._, root.Handlebars)
+    );
   }
 }(this, function (_, Handlebars) {
   return function (input) {
