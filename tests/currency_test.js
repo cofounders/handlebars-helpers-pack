@@ -46,7 +46,7 @@ exports['currency formatting'] = {
       context = {amount: 123.456789},
       html = this.handlebars.compile(template)(context).string;
 
-    test.equals(html, '$123.456');
+    test.equals(html, '$123.457');
     test.done();
   },
 
@@ -92,6 +92,15 @@ exports['currency formatting'] = {
       html = this.handlebars.compile(template)(context).string;
 
     test.equals(html, '$0.00');
+    test.done();
+  },
+
+  'rounding': function (test) {
+    var template = '{{{$ amount}}}',
+      context = {amount: 0.01},
+      html = this.handlebars.compile(template)(context).string;
+
+    test.equals(html, '$0.01');
     test.done();
   }
 
