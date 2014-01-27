@@ -1,0 +1,42 @@
+{
+  "name": "handlebars-helpers-pack",
+  "description": "A neat pack of helpers for Handlebars templates",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sebastiaan Deckers",
+    "email": "seb@ninja.sg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cofounders/handlebars-helpers-pack.git"
+  },
+  "licenses": [{
+    "type": "MIT"
+  }],
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "glob": "3.x",
+    "grunt": "0.4.1",
+    "grunt-cli": "~0.1",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-contrib-nodeunit": "0.2.2",
+    "handlebars": "*",
+    "load-grunt-config": "0.7.0",
+    "path": "0.4.9",
+    "requirejs": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "handlebars",
+    "handlebarsjs",
+    "helpers",
+    "helper",
+    "template",
+    "templating",
+    "templates"
+  ]
+}

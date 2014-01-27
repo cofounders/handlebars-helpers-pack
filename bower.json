@@ -1,0 +1,30 @@
+{
+  "name": "handlebars-helpers-pack",
+  "description": "A neat pack of helpers for Handlebars templates",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cofounders/handlebars-helpers-pack",
+  "authors": [
+    "Sebastiaan Deckers <seb@ninja.sg>"
+  ],
+  "keywords": [
+    "handlebars",
+    "handlebarsjs",
+    "helpers",
+    "helper",
+    "template",
+    "templating",
+    "templates"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "/*.json",
+    "/*.md",
+    "/*.txt",
+    "Gruntfile.js",
+    "node_modules",
+    "bower_components",
+    "grunt",
+    "tests"
+  ]
+}
