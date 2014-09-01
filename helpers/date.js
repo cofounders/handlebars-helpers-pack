@@ -10,12 +10,13 @@
     );
   }
 }(this, function (Handlebars) {
+  var window = this;
   return function (timestamp, options) {
     var output = new Date(timestamp)
       .toLocaleDateString(
-        root.navigator && (
-          root.navigator.languages ||
-          root.navigator.language),
+        window.navigator && (
+          window.navigator.languages ||
+          window.navigator.language),
         options
       );
     return new Handlebars.SafeString(output);
