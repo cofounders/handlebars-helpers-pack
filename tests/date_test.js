@@ -16,10 +16,10 @@ exports['date and time formatting'] = {
 
   'date': function (test) {
     var template = '{{{date when}}}',
-      context = {when: '1985-04-12T23:20:50.52Z'},
+      context = {when: '1985-04-12'},
       html = this.handlebars.compile(template)(context).string;
 
-    test.equals(html, 'Saturday, April 13, 1985');
+    test.equals(html, 'Friday, April 12, 1985');
     test.done();
   }
 
