@@ -17,7 +17,7 @@
         window.navigator && (
           window.navigator.languages ||
           window.navigator.language),
-        options
+        options.hash
       );
     return new Handlebars.SafeString(output);
   };

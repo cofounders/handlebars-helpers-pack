@@ -1,7 +1,7 @@
 {
   "name": "handlebars-helpers-pack",
   "description": "A neat pack of helpers for Handlebars templates",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": {
     "name": "Sebastiaan Deckers",
     "email": "seb@ninja.sg"
